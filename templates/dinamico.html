@@ -11,7 +11,7 @@
     <ul>
         {% for category in categories %}
             {% if category == 'code' %}
-                <li><strong>{{ category }}</strong></li>
+                <li><strong>{{ category|upper }}</strong></li>
             {% else %}
                 <li>{{ category }}</li>
             {% endif %}
@@ -22,7 +22,7 @@
     {% comment %}
         mostrar longitud
     {% endcomment %}
-    <h1>{{categories}}</h1>
+    <h1>{{categories|length}}</h1>
     
 </body>
 </html>
