@@ -9,22 +9,15 @@
         <title>{% block title %}{% endblock  %}</title>
     </head>
     <body>
-        <nav>
-            <ul>
-                <li><a href="">Herencia</a></li>
-                <li><a href="">Ejemplo</a></li>
-                <li><a href="">Otra</a></li>
-            </ul>
-        </nav>
+
+        {% include "layouts/partials/menu.html" %}
         <main>
             {% block main %}
 
             {% endblock %}
            
         </main>
-        <footer>
-            Todos los derechos reservados
-        </footer>
+        {% include "layouts/partials/footer.html" %}
         {% block scripts %}{% endblock  %}
 
     </body>
