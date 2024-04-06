@@ -1,25 +1,27 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/static/styles.css">
+    {% block style %}{% endblock  %}
     <title>{% block title %}{% endblock %}</title>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">Trabajo top</a></li>
-            <li><a href="">Otros trabajos</a></li>
 
-        </ul>
+{% include "layouts/partials/nav.html" %}
 
-    </nav>
     <main>
-        {% block content %}
+        {% block main %}
 
         {% endblock %}
     </main>
+    <container>
+        {% block content %}
+
+        {% endblock %}
+    </container>
     <footer>
         Todos los derechos reservados
     </footer>
