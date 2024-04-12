@@ -1,0 +1,120 @@
+:root{
+    --color-primary: #ff559a;
+    --color-secondary: #ffe69f;
+    --color-text: #3062d1;
+    --color-bg: #29cc9a;
+    --color-terciary:#d82b7a;
+    --font-title: sunny;
+    --font-text: cafe;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--font-text);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-title);
+    color: var(--color-text);
+}
+
+/* barra nav */
+nav{
+    width: 100vw;/*anchura*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    background-color: var(--color-primary);
+}
+
+nav img{
+    margin: 25px; /* espaciado del logo */
+}
+
+nav ul{
+    list-style-type: none;/*quitar bola lista del menu */
+    display: flex;
+    justify-content: flex-end;
+    justify-items: center;
+}
+
+nav ul li {
+    padding: 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: var(--color-secondary);
+    font-size: 30px;
+    font-weight: 700;
+    font-family: var(--font-title);
+}
+nav ul li a:hover{
+    color: white;
+
+}
+main{
+    background-color: var(--color-secondary);
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+footer{
+    width: 100vw;
+    min-height: 150px;
+    background-color: var(--color-text);
+    color: aliceblue;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer ul{
+    list-style-type:none;
+}
+
+footer ul li a{
+    color: white;
+
+    color: var(--color-secondary);
+    text-decoration: none;
+}
+footer img{
+    margin: 25px;
+}
+
+.about {
+    display: flex;
+    padding: 25px;
+}
+
+.about-content {
+    width: 350px;
+    padding: 50px;
+}
+
+.photos {
+    margin-top: 50px;
+    display: flex;
+    justify-self: center;
+    width: 60%;
+    flex-wrap: wrap;
+}
+
+/* Fuentes */
+@font-face {
+    font-family: sunny;
+    src: url('../fonts/FAFERS.TTF');
+}
+
+@font-face {
+    font-family: cafe;
+    src: url('../fonts/Cafe.ttf');
+}
